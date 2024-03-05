@@ -1,0 +1,22 @@
+{
+  "name": "resortbooking-backend",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "The Dynamic Resort Booking Platform is a comprehensive web-based solution designed to revolutionize the resort booking experience for users. This project aims to address the current challenges in resort reservation systems by offering a user-friendly interface, advanced features, and a seamless booking process.",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon server.js"
+  },
+  "author": "Bencymol",
+  "license": "ISC",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.18.3",
+    "mongoose": "^8.2.1",
+    "multer": "^1.4.5-lts.1"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.0"
+  }
+}
