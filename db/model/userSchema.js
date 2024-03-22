@@ -1,22 +1,38 @@
 import { model, Schema } from "mongoose";
 
-const adminSchema = Schema(
+const userSchema = Schema(
   {
     name: {
       type: String,
       required: true,
       trim: true,
     },
-    userName: {
+    email: {
       type: String,
       required: true,
       trim: true,
       unique: true,
     },
-    designation: {
+    country: {
       type: String,
       required: true,
       trim: true,
+    },
+    address: {
+      type: String,
+      required: true,
+    },
+    city: {
+      type: String,
+      required: true,
+    },
+    postalCode: {
+      type: Number,
+      required: true,
+    },
+    phone: {
+      type: Number,
+      required: true,
     },
     password: {
       type: String,
@@ -26,5 +42,5 @@ const adminSchema = Schema(
   { timestamps: true }
 );
 
-const Admin = model("Admin", adminSchema);
-export default Admin;
+const User = model("User", userSchema);
+export default User;
